@@ -1,0 +1,10 @@
+[package]
+name = "theosis"
+version = "0.1.1"
+edition = "2021"
+description = "Deterministic Git-to-Baby application update reconciler"
+license = "MIT"
+
+[[bin]]
+name = "theosis"
+path = "src/main.rs"

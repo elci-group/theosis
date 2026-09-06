@@ -1,0 +1,25 @@
+[[file]]
+path = "Cargo.toml"
+required = true
+
+[[file]]
+path = "src/main.rs"
+required = true
+forbid_regex = ["TODO", "FIXME", "unimplemented!"]
+
+[[file]]
+path = "README.md"
+required = true
+
+[[command]]
+name = "cargo test"
+cmd = ["cargo", "test"]
+expect_exit = 0
+timeout_secs = 120
+stdout_contains = ["test result: ok"]
+
+[[command]]
+name = "cargo build"
+cmd = ["cargo", "build"]
+expect_exit = 0
+timeout_secs = 120
